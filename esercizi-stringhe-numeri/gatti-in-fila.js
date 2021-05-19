@@ -17,4 +17,24 @@
 
   http://www.imparareaprogrammare.it
 */
+var numero_di_gatti = prompt(console.log('Inserisci il numero di gatti'));
+var gatti_per_fila = prompt(console.log('Inserisci il numero di file'));
+var numero_di_file = Math.ceil(numero_di_gatti/gatti_per_fila);
+var gatti_mancanti = gatti_per_fila * numero_di_file - numero_di_gatti;
+
+if (gatti_mancanti == 0) {
+  console.log("Il numero di file è " + numero_di_file + ".");
+} else {
+  console.log("Il numero di file è " + numero_di_file + ".");
+  console.log("Il numero di gatti mancanti per completare la fila sono " + gatti_mancanti + ".");
+}
+
+
+/*soluzione di alberto*/
 var cats = 44;
+var inLine = 6;
+
+var numLines = Math.ceil(cats/inLine);
+var missing = (numLines*inLine-cats);
+/* alt 96 per apici rovesci*/
+console.log(`${cats} gatti in fila per ${inLine} si unirono compatti in ${numLines} file. Nell'ultima fila rimasero ${missing} posti gatto disponibili.`);
