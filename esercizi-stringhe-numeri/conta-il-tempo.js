@@ -12,4 +12,8 @@
 
   http://www.imparareaprogrammare.it
 */
-var time = 0;
+var sec = prompt('Inserisci il numero di secondi che vuoi trasformare in ore minuti secondi: ');
+var ora = Math.floor(sec / 3600);
+var minuto = Math.floor(sec / 60 - ora * 60);
+var secondi = sec - (ora * 3600) - (minuto * 60)
+console.log(ora + 'ore, '+ minuto + 'minuti e '+ secondi + 'secondi.');
